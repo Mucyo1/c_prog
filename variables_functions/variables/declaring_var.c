@@ -16,7 +16,7 @@
     printf("my gpa is %f\n", gpa);// a double datatype uses %lf
     printf("my grades are %c\n", grade);
     printf("this is called the format specifier %.2f \n", ga);
-    printf("this is different from %f \n", ga);
+    printf("this is different from %f \n", ga);// the use of 
     
     return (0);
  }
