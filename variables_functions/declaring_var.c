@@ -14,4 +14,6 @@
     printf("my age is %d\n", age);
     printf("my gpa is %f\n", gpa);
     printf("my grades are %c\n", grade);
+    
+    return (0);
  }
