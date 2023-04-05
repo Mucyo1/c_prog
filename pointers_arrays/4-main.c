@@ -18,6 +18,6 @@ int main(void)
     printf("the value of 'p' is: %p\n", p);// this will print the value of p which will be the address of n that was assigned to it during declaration
     
     *p = 402;//pointers can be used to manupilate variables and there values 
-    printf("the value of 'n' is: %d\n", n);
+    printf("the value of 'n' is: %d\n", n);// this is called deferencing
     return (0);
 }
