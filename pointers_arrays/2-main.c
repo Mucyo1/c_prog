@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-   int *p;
+   char *p;
 
    printf("Size of pointer: %lu\n", sizeof(p));
    return (0);
