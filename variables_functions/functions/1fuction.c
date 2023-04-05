@@ -2,7 +2,7 @@
 
 void explained()
 {
-    printf("this function is called by writting a simple introduction \nthis function will be used to display this line of words \n");
+    printf("'this function is called by writting a simple introduction' \n'this function will be used to display this line of words' \n");
 }
 
 
@@ -18,4 +18,6 @@ int main()
     
     birthday(name, age);
     explained();
+    
+    return (0);
 }
