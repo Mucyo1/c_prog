@@ -5,6 +5,6 @@ int myFunction(int x) {
 }
 
 int main() {
-  printf("Result is: %d", myFunction(3));
-  return 0;
+  printf("Result is: %d\n", myFunction(3));
+  return (0);
 }
