@@ -34,4 +34,10 @@ int main(void)
    printf("Address of 'a[1]': %p\n", (a + 1));
    printf("Address of 'a[1]': %p\n", &(*(a + 1)));
    return (0);
+   
+   /*But wait a second, if the value of a is 0x7ffff8f19240,
+   how come a + 1 == 0x7ffff8f19244 and not 0x7ffff8f19241?
+   This is the pointers arithmetic. 
+   The computer knows that a points to an integer. 
+   The computer also knows that the size of an integer in memory is sizeof(int) bytes - in this case 4 bytes - and concludes that the next element of this type will be stored 4 bytes later in memory*/
 }
