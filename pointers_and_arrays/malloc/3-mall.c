@@ -12,4 +12,5 @@ int main(void)
     {
         printf("a [%d] = %d\n", i, a[i]);
     }
+    free(a);
 }
