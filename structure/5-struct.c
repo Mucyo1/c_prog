@@ -19,7 +19,7 @@ int main ()
     for (i = 0; i < 2; i++)
     {
         printf("Enter the car %d fuel tank capacity: ", i+1);
-        scanf("%d", &c[i].fuel);
+        scanf("%d", &c[i].fuel);// you must not forget & as it holds the address of the array therefore it element
         printf("Enter the car %d seating capacity: ", i+1);
         scanf("%d", &c[i].seating_cap);
         printf("Enter the car %d city mileage:\n", i+1);
