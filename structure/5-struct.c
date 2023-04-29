@@ -22,7 +22,7 @@ int main ()
         scanf("%d", &c[i].fuel);
         printf("Enter the car %d seating capacity: ", i+1);
         scanf("%d", &c[i].seating_cap);
-        printf("Enter the car %d city mileage: ", i+1);
+        printf("Enter the car %d city mileage:\n", i+1);
         scanf("%f", &c[i].city_mile);
         
     }
@@ -34,7 +34,7 @@ int main ()
         printf("The fuel tank capacity: %d\n",c[i].fuel);
         
         printf("The seating capacity: %d\n", c[i].seating_cap);
-        printf("The car city mileage: %f\n", c[i].city_mile);
+        printf("The car city mileage: %f\n\n", c[i].city_mile);
         
     }
     return 0;
