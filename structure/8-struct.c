@@ -20,12 +20,13 @@ void count_of_nodes(struct structnode *head)
     }
 
     struct structnode *ptr = head;
-    while(ptr != NULL)
+
+    while (ptr != NULL)
     {
-        count++;
-        ptr = ptr->next;
+        count++;//this line will add the number of times the code encounters a node.
+        ptr = ptr->next;//ptr point the the link of the next node till it's NULL
     }
-    printf("the number of nodes is : %d\n", count);
+    printf("the number of nodes is: %d\n", count);
 }
 
 

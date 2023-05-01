@@ -11,11 +11,22 @@ struct structnode
     };
 
 
-void printList(struct structnode* n)
+void printList(struct structnode *head)
 {
-    while (n != NULL) {
-        printf(" %d ", n->data);
-        n = n->next;
+    if (head == NULL)
+    {
+        printf("the node is empty");
+    }
+
+    struct structnode *ptr = head;//initialize the pointer ptr to the node head
+
+    while (ptr != NULL) {
+         /** this code will print the data in the nodes
+          * until the ptr is equal to NULL
+          * which means the end of the nodes
+          */
+        printf(" %d ", ptr->data);
+        ptr = ptr->next;//ptr point the the link of the next node till it's NULL
     }
     printf("\n");
 }
