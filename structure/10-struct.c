@@ -10,23 +10,45 @@ struct structnode
         struct structnode *next;
     };
 
-void count_of_nodes(struct structnode *head)
-{
-    int count = 0;
+/*******************code that prints datas in node***********************/
 
+void printList(struct structnode *head)
+{
     if (head == NULL)
     {
         printf("the node is empty");
     }
 
-    struct structnode *ptr = head;
+    struct structnode *ptr = head;//initialize the pointer ptr to the node head
 
-    while (ptr != NULL)
-    {
-        count++;//this line will add the number of times the code encounter a 
+    while (ptr != NULL) {
+         /** this code will print the data in the nodes
+          * until the ptr is equal to NULL
+          * which means the end of the nodes
+          */
+        printf(" %d ", ptr->data);
         ptr = ptr->next;//ptr point the the link of the next node till it's NULL
     }
-    printf("the number of nodes is: %d\n", count);
+    printf("\n");
+}
+
+/******************data that inserts a node*******************/
+
+void add_to_end(struct structnode *head, int data)
+{
+    struct structnode *ptr, *newn;
+
+    ptr = head;
+    newn = malloc(sizeof(struct structnode));
+
+    newn->data = data;
+    newn->next = NULL;
+
+    while (ptr->next != NULL)
+    {
+       ptr = ptr->next;
+    }
+    ptr->next = newn;
 }
 
 
@@ -47,7 +69,9 @@ int main()
     second->data = 46;
     second->next = NULL; //as second is the last node it will point to null
 
-    count_of_nodes(head);
+    add_to_end(head, 64);
+    printList(head);
+
 
     return 0;
 //head->next
