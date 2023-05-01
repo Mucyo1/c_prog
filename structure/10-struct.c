@@ -36,19 +36,19 @@ void printList(struct structnode *head)
 
 void add_to_end(struct structnode *head, int data)
 {
-    struct structnode *ptr, *newn;
+    struct structnode *ptr, *newN;
 
     ptr = head;
-    newn = malloc(sizeof(struct structnode));
+    newN = malloc(sizeof(struct structnode));
 
-    newn->data = data;
-    newn->next = NULL;
+    newN->data = data;
+    newN->next = NULL;
 
     while (ptr->next != NULL)
     {
        ptr = ptr->next;
     }
-    ptr->next = newn;
+    ptr->next = newN;
 }
 
 
